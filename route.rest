@@ -1,0 +1,31 @@
+GET http://localhost:3000/user_routes
+
+###
+
+GET http://localhost:3000/user_routes/61a90767a11ef29c8d76cc75
+
+
+###
+
+POST http://localhost:3000/user_routes/register
+Content-Type: application/json
+
+{
+    "lastname": "Marin",
+    "firstname":"Mihai",
+    "email":"mihai@yahoo.com",
+    "password": "password",
+    "role": "Student"
+}
+###
+
+DELETE http://localhost:3000/routes/61a90767a11ef29c8d76cc75
+
+###
+
+PATCH  http://localhost:3000/routes/61a907afadb34dba7458a5b3
+Content-Type: application/json
+
+{
+    "name": "new contact"
+}
